@@ -1,0 +1,78 @@
+//--- KIT HOME ---//
+
+#kit .home {
+
+	h2 {
+		@extend %p-title-size;
+		@extend %bold-weight;
+		margin-bottom: 2rem;
+	}
+
+	#top-part {
+		@include outer-container();
+		@include pads(0 2 0 2);
+		margin-bottom: 7rem;
+	}
+
+	#toolkit {
+		@include span-columns(6);
+		@include omega(2n);
+
+	}
+
+	#resources {
+		@include span-columns(6);
+
+		a {
+			@include span-columns(3 of 6);
+			text-decoration: none;
+		}
+
+		a:nth-child(2n) {
+			margin-right: 0;
+		}
+
+		a {
+			margin-bottom: 1rem;
+		}
+		
+
+	}
+
+	#project {
+		@include outer-container();
+		@include pads(0 2 0 2);
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+
+		& > div {
+			@extend %border-heavy;
+
+			h2 {
+				margin-top: 5rem;
+			}
+
+			div {
+				-webkit-columns: 300px 2;
+				-moz-columns: 300px 2;
+				columns: 300px 2;
+
+				h3 {
+					@extend %baseline-size;
+					@extend %bold-weight;
+				}
+
+				p + h3 {
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+
+	.enti .title-enti {
+		@extend %baseline-size;
+		@extend %bold-weight;
+		@extend %border-light;
+		padding-top: 3rem;
+	}
+}

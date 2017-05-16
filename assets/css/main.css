@@ -51,13 +51,13 @@ html {
   font-weight: normal;
   src: url("../fonts/roboto_light/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_light/Roboto-Light-webfont.woff") format("woff"), url("../fonts/roboto_light/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/roboto_light/Roboto-Light-webfont.svg#roboto-light") format("svg"); }
 
-.container-sections article, .body, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .newsletter form input, .container-list, .project-partner article > div .headline, .abstract-lang-nav li a, .newsletter h2, body.senseable-art, body.senseable-art h2, body.senseable-art .workshop-title .place-time, body.senseable-art .people-lists .list, body.senseable-art.senseable-art-project .project-title .project-authors {
+.container-sections article, .body, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .newsletter form input, .container-list, .project-partner article > div .headline, .abstract-lang-nav li a, .newsletter h2, body.senseable-art, body.senseable-art h2, body.senseable-art .workshop-title .place-time, body.senseable-art .people-lists .list, body.senseable-art.senseable-art-project .project-title .project-authors, #kit .home #project > div div h3, #kit .home .enti .title-enti {
   font-size: 1rem;
   line-height: 140%;
   margin-top: 0;
   color: #212121; }
   @media screen and (max-width: 480px) {
-    .container-sections article, .body, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .newsletter form input, .container-list, .project-partner article > div .headline, .abstract-lang-nav li a, .newsletter h2, body.senseable-art, body.senseable-art h2, body.senseable-art .workshop-title .place-time, body.senseable-art .people-lists .list, body.senseable-art.senseable-art-project .project-title .project-authors {
+    .container-sections article, .body, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .newsletter form input, .container-list, .project-partner article > div .headline, .abstract-lang-nav li a, .newsletter h2, body.senseable-art, body.senseable-art h2, body.senseable-art .workshop-title .place-time, body.senseable-art .people-lists .list, body.senseable-art.senseable-art-project .project-title .project-authors, #kit .home #project > div div h3, #kit .home .enti .title-enti {
       line-height: 140%; } }
 
 .headline, .container-events li article time, .container-events li article .event-list-title, .main-nav nav .main-logo, .class-main-nav-button, .main-nav nav > ul > li > a, .main-nav nav .menu-button a, .class-sec-nav-button, .main-nav nav .conatiner-second-level .second-level > li > a, .error-page p, .event-header, body.senseable-art .header.senseable-main-nav nav, body.senseable-art .description, body.senseable-art .info-items .info-info, body.senseable-art.senseable-art-project .project-title .project-subtitle, body.senseable-art.senseable-art-project h2 {
@@ -82,7 +82,7 @@ html {
 .button, .newsletter form .button {
   font-size: 0.875rem; }
 
-.class-main-nav-button, .main-nav nav > ul > li > a, .main-nav nav .menu-button a, .class-sec-nav-button, .main-nav nav .conatiner-second-level .second-level > li > a, body.senseable-art .header.senseable-main-nav .senseable-menu-button a {
+.class-main-nav-button, .main-nav nav > ul > li > a, .main-nav nav .menu-button a, .class-sec-nav-button, .main-nav nav .conatiner-second-level .second-level > li > a, body.senseable-art .header.senseable-main-nav .senseable-menu-button a, #kit footer .contacts {
   font-family: 'roboto-light', Arial, sans-serif;
   font-weight: normal; }
 
@@ -90,11 +90,11 @@ html {
   font-family: 'roboto-regular', Arial, sans-serif;
   font-weight: normal; }
 
-.button, .newsletter form .button, .error-page p, body.senseable-art .header.senseable-main-nav nav, body.senseable-art .description, body.senseable-art .workshop-title .workshop-subtitle, body.senseable-art .workshop-title .description, body.senseable-art .info-items .info-info, body.senseable-art.senseable-art-project .project-title .project-subtitle, body.senseable-art.senseable-art-project h3, body.senseable-art.senseable-art-project h4 {
+.button, .newsletter form .button, .error-page p, body.senseable-art .header.senseable-main-nav nav, body.senseable-art .description, body.senseable-art .workshop-title .workshop-subtitle, body.senseable-art .workshop-title .description, body.senseable-art .info-items .info-info, body.senseable-art.senseable-art-project .project-title .project-subtitle, body.senseable-art.senseable-art-project h3, body.senseable-art.senseable-art-project h4, #kit #categories-container section > header h2, #kit #categories-container section a article .article-content-container > div header h3, #kit #percorsi-container section .percorsi-content-container header h2 {
   font-family: 'roboto-medium', Arial, sans-serif;
   font-weight: normal; }
 
-.headline, .container-events li article time, .container-events li article .event-list-title, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .error-page h1, .title, .title-article, .event-title, .main-nav nav .main-logo, .body strong, .container-boxes .document .subtitle, .project-partner article > div .headline, .abstract-lang-nav li a.active, .project-team li article div h2, .resource-document-text .border-top #article .subtitle, .resource-experience-text .border-top .aside #partners, .resource-experience-text .border-top .aside #location, .resource-experience-text .border-top #article .subtitle, .resource-experience-gallery h2, .contacts-contacts strong, .contacts-contacts > address strong, .contacts-colophon .colophon-container h3, .container-events li article div .location, .event-header #time time, .event-content .aside address strong, .newsletter h2, .enti .title-enti, body.senseable-art h2, body.senseable-art .workshop-title h1, body.senseable-art .people-lists .list h3, body.senseable-art .project-lists ul li h3, body.senseable-art.senseable-art-project .project-title h1, body.senseable-art.senseable-art-project h2 {
+.headline, .container-events li article time, .container-events li article .event-list-title, .container-list li div h3, .container-sections h3, .abstact-content section h3, .resource-document-text .border-top .aside h3, .error-page h1, .title, .title-article, .event-title, .main-nav nav .main-logo, .body strong, .container-boxes .document .subtitle, .project-partner article > div .headline, .abstract-lang-nav li a.active, .project-team li article div h2, .resource-document-text .border-top #article .subtitle, .resource-experience-text .border-top .aside #partners, .resource-experience-text .border-top .aside #location, .resource-experience-text .border-top #article .subtitle, .resource-experience-gallery h2, .contacts-contacts strong, .contacts-contacts > address strong, .contacts-colophon .colophon-container h3, .container-events li article div .location, .event-header #time time, .event-content .aside address strong, .newsletter h2, .enti .title-enti, body.senseable-art h2, body.senseable-art .workshop-title h1, body.senseable-art .people-lists .list h3, body.senseable-art .project-lists ul li h3, body.senseable-art.senseable-art-project .project-title h1, body.senseable-art.senseable-art-project h2, #title-bar header h1, #kit .home h2, #kit .home #project > div div h3, #kit .home .enti .title-enti, #kit #categories-nav ul a, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div a li h3, #kit footer .contacts strong {
   font-family: 'roboto-bold', Arial, sans-serif;
   font-weight: normal; }
 
@@ -2851,3 +2851,521 @@ body.senseable-art.senseable-art-project ul.gallery li {
       body.senseable-art.senseable-art-project ul.gallery li figure a img.landscape {
         height: 100%;
         width: auto; }
+
+@media screen and (max-width: 480px) {
+  #kit {
+    font-size: 14px; } }
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #kit {
+    font-size: 14px; } }
+
+@media screen and (min-width: 601px) and (max-width: 840px) {
+  #kit {
+    font-size: 14px; } }
+
+@media screen and (min-width: 841px) and (max-width: 960px) {
+  #kit {
+    font-size: 16px; } }
+
+@media screen and (min-width: 961px) {
+  #kit {
+    font-size: 16px; } }
+
+#kit #categories-nav {
+  font-size: 18px; }
+
+@media screen and (max-width: 480px) {
+  #kit .home h2, #kit #kit-single #title-bar header h2, #kit #kit-single article aside > div h2, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div h2, #kit #percorsi-container section .percorsi-content-container header h2 {
+    font-size: 1.286rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #kit .home h2, #kit #kit-single #title-bar header h2, #kit #kit-single article aside > div h2, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div h2, #kit #percorsi-container section .percorsi-content-container header h2 {
+    font-size: 1.286rem; } }
+
+@media screen and (min-width: 601px) and (max-width: 840px) {
+  #kit .home h2, #kit #kit-single #title-bar header h2, #kit #kit-single article aside > div h2, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div h2, #kit #percorsi-container section .percorsi-content-container header h2 {
+    font-size: 1.714rem; } }
+
+@media screen and (min-width: 841px) and (max-width: 960px) {
+  #kit .home h2, #kit #kit-single #title-bar header h2, #kit #kit-single article aside > div h2, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div h2, #kit #percorsi-container section .percorsi-content-container header h2 {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 961px) {
+  #kit .home h2, #kit #kit-single #title-bar header h2, #kit #kit-single article aside > div h2, #kit #kit-single article #single-article-container > h2, #kit #kit-single #more-articles > div h2, #kit #percorsi-container section .percorsi-content-container header h2 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 480px) {
+  #kit #categories-container section > header h2 {
+    font-size: 1.286rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #kit #categories-container section > header h2 {
+    font-size: 1.286rem; } }
+
+@media screen and (min-width: 601px) and (max-width: 840px) {
+  #kit #categories-container section > header h2 {
+    font-size: 1.714rem; } }
+
+@media screen and (min-width: 841px) and (max-width: 960px) {
+  #kit #categories-container section > header h2 {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 961px) {
+  #kit #categories-container section > header h2 {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 480px) {
+  #title-bar header h1 {
+    font-size: 2.286rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  #title-bar header h1 {
+    font-size: 2.286rem; } }
+
+@media screen and (min-width: 601px) and (max-width: 840px) {
+  #title-bar header h1 {
+    font-size: 2.286rem; } }
+
+@media screen and (min-width: 841px) and (max-width: 960px) {
+  #title-bar header h1 {
+    font-size: 3rem; } }
+
+@media screen and (min-width: 961px) {
+  #title-bar header h1 {
+    font-size: 3rem; } }
+
+#kit .home #project > div {
+  border-top: 4px solid #4b4b4b; }
+
+#kit .home .enti .title-enti {
+  border-top: 0.05rem solid #4b4b4b; }
+
+#kit #categories-nav .comunicazione, #kit #categories-container section#comunicazione header h2, #kit #categories-container section#comunicazione article div div header h3, #kit #categories-container section#communication header h2, #kit #categories-container section#communication article div div header h3, #kit #categories-container section#comunication header h2, #kit #categories-container section#comunication article div div header h3, #kit #categories-container section#kommunikation header h2, #kit #categories-container section#kommunikation article div div header h3 {
+  color: #b41d6c; }
+
+#kit #categories-nav .opere, #kit #categories-container section#opere header h2, #kit #categories-container section#opere article div div header h3 {
+  color: #0162cb; }
+
+#kit #categories-nav .orientamento, #kit #categories-container section#orientamento header h2, #kit #categories-container section#orientamento article div div header h3 {
+  color: #feb500; }
+
+#title-bar {
+  background-color: rgba(75, 75, 75, 0.7);
+  color: #FFFFFF; }
+  #title-bar header {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 2rem 5rem 2rem; }
+    #title-bar header::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #title-bar header h1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      #title-bar header h1:last-child {
+        margin-right: 0; }
+    #title-bar header div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-top: 5rem; }
+      #title-bar header div:last-child {
+        margin-right: 0; }
+
+#kit .button {
+  background-color: #4b4b4b; }
+
+#kit .home h2 {
+  margin-bottom: 2rem; }
+
+#kit .home #top-part {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 2rem 0rem 2rem;
+  margin-bottom: 7rem; }
+  #kit .home #top-part::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+#kit .home #toolkit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #kit .home #toolkit:last-child {
+    margin-right: 0; }
+  #kit .home #toolkit:nth-child(2n) {
+    margin-right: 0; }
+  #kit .home #toolkit:nth-child(2n+1) {
+    clear: left; }
+
+#kit .home #resources {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  #kit .home #resources:last-child {
+    margin-right: 0; }
+  #kit .home #resources a {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+    text-decoration: none; }
+    #kit .home #resources a:last-child {
+      margin-right: 0; }
+  #kit .home #resources a:nth-child(2n) {
+    margin-right: 0; }
+  #kit .home #resources a {
+    margin-bottom: 1rem; }
+
+#kit .home #project {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 2rem 0rem 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  #kit .home #project::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #kit .home #project > div h2 {
+    margin-top: 5rem; }
+  #kit .home #project > div div {
+    -webkit-columns: 300px 2;
+    -moz-columns: 300px 2;
+    columns: 300px 2; }
+    #kit .home #project > div div p + h3 {
+      margin-top: 1rem; }
+
+#kit .home .enti .title-enti {
+  padding-top: 3rem; }
+
+#kit #categories-nav {
+  border-bottom: 1px solid #212121; }
+  #kit #categories-nav ul {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem; }
+    #kit #categories-nav ul::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #kit #categories-nav ul li {
+      display: inline;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: center; }
+      #kit #categories-nav ul li:last-child {
+        margin-right: 0; }
+    #kit #categories-nav ul a {
+      line-height: 3rem;
+      text-decoration: none; }
+
+#kit #categories-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 2rem 0rem 2rem;
+  margin-bottom: 7rem; }
+  #kit #categories-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #kit #categories-container section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 3rem 0rem 5rem 0rem;
+    border-bottom: 1px solid #212121; }
+    #kit #categories-container section:last-child {
+      margin-right: 0; }
+    #kit #categories-container section:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    #kit #categories-container section > header {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding: 1rem 1rem 1rem 1rem;
+      margin-top: 2rem; }
+      #kit #categories-container section > header:last-child {
+        margin-right: 0; }
+      #kit #categories-container section > header h2 {
+        margin-bottom: 1rem; }
+    #kit #categories-container section#comunicazione > header, #kit #categories-container section#communication > header, #kit #categories-container section#comunication > header, #kit #categories-container section#kommunikation > header {
+      border-left: 1rem solid #b41d6c; }
+    #kit #categories-container section#comunicazione article .article-content-container, #kit #categories-container section#communication article .article-content-container, #kit #categories-container section#comunication article .article-content-container, #kit #categories-container section#kommunikation article .article-content-container {
+      border: 1px solid #b41d6c; }
+    #kit #categories-container section#opere > header {
+      border-left: 1rem solid #0162cb; }
+    #kit #categories-container section#opere article .article-content-container {
+      border: 1px solid #0162cb; }
+    #kit #categories-container section#orientamento > header {
+      border-left: 1rem solid #feb500; }
+    #kit #categories-container section#orientamento article .article-content-container {
+      border: 1px solid #feb500; }
+    #kit #categories-container section a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #kit #categories-container section a:last-child {
+        margin-right: 0; }
+      #kit #categories-container section a article {
+        margin-top: 2rem; }
+        #kit #categories-container section a article .article-content-container {
+          max-width: 1024px;
+          margin-left: auto;
+          margin-right: auto; }
+          #kit #categories-container section a article .article-content-container::after {
+            clear: both;
+            content: "";
+            display: table; }
+          #kit #categories-container section a article .article-content-container aside {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%; }
+            #kit #categories-container section a article .article-content-container aside:last-child {
+              margin-right: 0; }
+            #kit #categories-container section a article .article-content-container aside img {
+              max-width: 100%;
+              padding: 1rem; }
+          #kit #categories-container section a article .article-content-container > div {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 48.82117%;
+            margin-right: 0;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding-right: 1rem; }
+            #kit #categories-container section a article .article-content-container > div:last-child {
+              margin-right: 0; }
+            #kit #categories-container section a article .article-content-container > div header {
+              float: left;
+              display: block;
+              margin-right: 4.82916%;
+              width: 100%; }
+              #kit #categories-container section a article .article-content-container > div header:last-child {
+                margin-right: 0; }
+              #kit #categories-container section a article .article-content-container > div header h3 {
+                text-decoration: none; }
+    #kit #categories-container section a:nth-child(2n) {
+      margin-right: 0; }
+  #kit #categories-container a:link, #kit #categories-container a:visited, #kit #categories-container a:hover, #kit #categories-container a:active {
+    text-decoration: none;
+    color: #212121; }
+
+#kit #kit-single.comunicazione #title-bar, #kit #kit-single.communication #title-bar, #kit #kit-single.comunication #title-bar, #kit #kit-single.kommunikation #title-bar {
+  background-color: #b41d6c; }
+
+#kit #kit-single.comunicazione article aside h2, #kit #kit-single.comunicazione #more-articles > div li h3, #kit #kit-single.communication article aside h2, #kit #kit-single.communication #more-articles > div li h3, #kit #kit-single.comunication article aside h2, #kit #kit-single.comunication #more-articles > div li h3, #kit #kit-single.kommunikation article aside h2, #kit #kit-single.kommunikation #more-articles > div li h3 {
+  color: #b41d6c; }
+
+#kit #kit-single.comunicazione #more-articles > div li, #kit #kit-single.communication #more-articles > div li, #kit #kit-single.comunication #more-articles > div li, #kit #kit-single.kommunikation #more-articles > div li {
+  border: 1px solid #b41d6c; }
+
+#kit #kit-single.opere #title-bar, #kit #kit-single.artpieces #title-bar {
+  background-color: #0162cb; }
+
+#kit #kit-single.opere article aside h2, #kit #kit-single.opere #more-articles > div li h3, #kit #kit-single.artpieces article aside h2, #kit #kit-single.artpieces #more-articles > div li h3 {
+  color: #0162cb; }
+
+#kit #kit-single.opere #more-articles > div li, #kit #kit-single.artpieces #more-articles > div li {
+  border: 1px solid #0162cb; }
+
+#kit #kit-single.orientamento #title-bar, #kit #kit-single.orientation #title-bar, #kit #kit-single.orientation #title-bar {
+  background-color: #feb500; }
+
+#kit #kit-single.orientamento article aside h2, #kit #kit-single.orientamento #more-articles > div li h3, #kit #kit-single.orientation article aside h2, #kit #kit-single.orientation #more-articles > div li h3, #kit #kit-single.orientation article aside h2, #kit #kit-single.orientation #more-articles > div li h3 {
+  color: #feb500; }
+
+#kit #kit-single.orientamento #more-articles > div li, #kit #kit-single.orientation #more-articles > div li, #kit #kit-single.orientation #more-articles > div li {
+  border: 1px solid #feb500; }
+
+#kit #kit-single #title-bar header h1 {
+  margin-bottom: 2rem; }
+
+#kit #kit-single #title-bar header > div {
+  float: none;
+  width: auto;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  #kit #kit-single #title-bar header > div::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #kit #kit-single #title-bar header > div > div {
+    margin-top: 0;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #kit #kit-single #title-bar header > div > div:last-child {
+      margin-right: 0; }
+    #kit #kit-single #title-bar header > div > div img {
+      max-width: 100%; }
+  #kit #kit-single #title-bar header > div p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    #kit #kit-single #title-bar header > div p:last-child {
+      margin-right: 0; }
+
+#kit #kit-single article {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem 2rem 7rem 2rem; }
+  #kit #kit-single article::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #kit #kit-single article aside > div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #kit #kit-single article aside > div:last-child {
+      margin-right: 0; }
+    #kit #kit-single article aside > div h2 {
+      margin-bottom: 1rem; }
+    #kit #kit-single article aside > div li {
+      line-height: 160%; }
+      #kit #kit-single article aside > div li a {
+        text-decoration: none;
+        color: #212121; }
+  #kit #kit-single article #single-article-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    #kit #kit-single article #single-article-container:last-child {
+      margin-right: 0; }
+    #kit #kit-single article #single-article-container > h2 {
+      margin-bottom: 2rem;
+      margin-top: 5rem; }
+    #kit #kit-single article #single-article-container > h2:first-child {
+      margin-top: 0; }
+
+#kit #kit-single #more-articles {
+  background-color: rgba(75, 75, 75, 0.1); }
+  #kit #kit-single #more-articles > div {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem 7rem 2rem; }
+    #kit #kit-single #more-articles > div::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #kit #kit-single #more-articles > div h2 {
+      margin-bottom: 5rem; }
+    #kit #kit-single #more-articles > div a {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-decoration: none; }
+      #kit #kit-single #more-articles > div a:last-child {
+        margin-right: 0; }
+      #kit #kit-single #more-articles > div a li {
+        padding: 1rem; }
+        #kit #kit-single #more-articles > div a li img {
+          display: block;
+          margin: auto;
+          max-width: 100%; }
+        #kit #kit-single #more-articles > div a li p {
+          color: #212121; }
+
+#kit #percorsi-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 2rem 7rem 2rem; }
+  #kit #percorsi-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #kit #percorsi-container section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-top: 5rem; }
+    #kit #percorsi-container section:last-child {
+      margin-right: 0; }
+    #kit #percorsi-container section .percorsi-media-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #kit #percorsi-container section .percorsi-media-container:last-child {
+        margin-right: 0; }
+      #kit #percorsi-container section .percorsi-media-container .video {
+        position: relative;
+        padding-bottom: 56.2757202%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background-color: #FFFFFF; }
+      #kit #percorsi-container section .percorsi-media-container .video iframe, #kit #percorsi-container section .percorsi-media-container .video object, #kit #percorsi-container section .percorsi-media-container .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background-color: #FFFFFF; }
+      #kit #percorsi-container section .percorsi-media-container img {
+        max-width: 100%; }
+    #kit #percorsi-container section .percorsi-content-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #kit #percorsi-container section .percorsi-content-container:last-child {
+        margin-right: 0; }
+      #kit #percorsi-container section .percorsi-content-container header h2 {
+        margin-bottom: 1rem; }
+
+#kit footer {
+  background-color: #4b4b4b; }
+  #kit footer .contacts {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    color: #FFFFFF; }
+    #kit footer .contacts::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #kit footer .contacts div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #kit footer .contacts div:last-child {
+        margin-right: 0; }
+
+#kit .main-nav {
+  background-color: #4b4b4b; }

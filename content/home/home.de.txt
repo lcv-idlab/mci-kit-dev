@@ -1,0 +1,17 @@
+Title: home
+
+----
+
+Toolkit: Der Toolkit ...
+
+----
+
+Resources: 
+
+- 
+  name: Forschung website
+  url: http://mci.supsi.ch/ricerca/
+
+----
+
+Project: Das Project ...

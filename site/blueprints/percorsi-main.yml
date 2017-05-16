@@ -1,0 +1,26 @@
+// blueprint title (template title)
+title: percorsi-main
+
+// page settings
+options:
+  delete: false
+  preview: true
+  status: true
+  url: false
+  template: true
+
+// subpages settings
+pages: true
+  template: percorsi-single
+
+// files
+files: false
+
+// fields with their fields types and options
+fields:
+  title:
+    label: Titolo
+    type: text
+  description:
+    label: Descrizione
+    type: textarea

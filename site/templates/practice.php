@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header-ricerca') ?>
 
 <?php snippet('menu', ['showHome' => true]) ?>
 
@@ -30,4 +30,4 @@
 
 </div>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>

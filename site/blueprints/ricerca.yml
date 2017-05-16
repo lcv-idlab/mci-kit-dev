@@ -1,0 +1,24 @@
+// blueprint title (template title)
+title: ricerca
+
+// page settings
+options:
+  delete: false
+  url: false
+
+// subpages settings
+pages: true
+
+// file settings
+files: true
+
+// fields with their fields types and options
+fields:
+  title:
+    label: Title
+    type:  text
+  info:
+    label: Modifica le sezioni
+    type: info
+    text: >
+      <p>Seleziona la pagina relativa alla sezione interessata per apportare le modifiche.</p>

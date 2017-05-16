@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header-ricerca') ?>
 
 <main>
   <div class="error-page">
@@ -8,4 +8,4 @@
     <p><a href="/" class="link">Vai all'homepage del sito</a></p>
   </div>
 </main>
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>

@@ -1,0 +1,37 @@
+// blueprint title (template title)
+title: percorsi-single
+
+// page settings
+options:
+  delete: false
+  preview: true
+  status: true
+  url: false
+  template: false
+
+// subpages settings
+pages: false
+
+// files
+files: true
+  fields:
+    alt:
+      label: Alt text
+      type: text
+
+// fields with their fields types and options
+fields:
+  title:
+    label: Titolo
+    type: text
+  description:
+    label: Descrizione
+    type: textarea
+  cover:
+    label: Immagine rappresentativa
+    type: image
+  movie:
+    label: Video
+    type: text
+    placeholder: Inserici solo l'id del video, per esempio 54785974
+    help: "Inserire l'id del video che è l'ultima parte del link (https://vimeo.com/54785974)"

@@ -26,3 +26,12 @@ fields:
   subtitle:
     label: Sottotitolo
     type: textarea
+  address:
+    label: Indirizzo
+    type: textarea
+  contact:
+    label: Contatto
+    type: textarea
+  license:
+    label: Licenza
+    type: textarea

@@ -4,9 +4,46 @@ title: home
 // page settings
 options:
   delete: false
+  preview: true
+  status: true
+  url: false
+  template: false
 
 // subpages settings
 pages: false
 
 // files
-files: false
+files: true
+  fields: 
+    alt:
+      label: Alt text
+      type: text
+
+// fields with their fields types and options
+fields:
+  title:
+    label: Titolo della pagina
+    type: text
+  toolkit:
+    label: Il toolkit
+    type: textarea
+  resources:
+    label: Risorse (bottoni)
+    type: structure
+    entry: >
+      <b>{{name}}</b><br>{{url}}
+    fields:
+      name:
+        label: Nome del bottone
+        type: text
+      url:
+        label: Link del bottone
+        type: url
+      doc:
+        label: Documento
+        type: select 
+        default: architecture
+        options: documents
+  project:
+    label: Il progetto
+    type: textarea

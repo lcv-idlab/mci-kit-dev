@@ -1,0 +1,22 @@
+//--- KIT FOOTER ---//
+
+#kit {
+	footer {
+		background-color: color(brand-kit);
+
+		.contacts {
+			@include outer-container();
+			@include pads(1 2 1 2);
+
+			@extend %light-weight;
+			color: color(white);
+
+			strong {
+				@extend %bold-weight;
+			}
+			div {
+				@include span-columns(4);
+			}
+		}
+	}
+}

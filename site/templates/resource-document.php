@@ -1,8 +1,8 @@
-<?php snippet('header') ?>
+<?php snippet('header-ricerca') ?>
 
   <main>
 
-    <a href="<?php echo page('risorse')->url() ?>" class="link link-back"><span>Torna indietro</span></a>
+    <a href="<?php echo page('ricerca/risorse')->url() ?>" class="link link-back"><span>Torna indietro</span></a>
     
     <h1 class="title-article"><?php echo ucfirst( page()->title()->html() ) ?></h1>
 
@@ -72,4 +72,4 @@
 
   </main>
   
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>

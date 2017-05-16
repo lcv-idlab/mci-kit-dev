@@ -1,0 +1,153 @@
+//--- KIT SINGLE ---//
+
+#kit #kit-single {
+
+	//--- Categories colors specifications ---//
+
+	&.comunicazione, &.communication, &.comunication, &.kommunikation {
+		#title-bar {
+			background-color: color(comunicazione);
+		}
+		article aside h2, #more-articles > div li h3 {
+			color: color(comunicazione);
+		}
+		#more-articles > div li {
+			border: 1px solid color(comunicazione);
+		}
+
+	}
+	&.opere, &.artpieces {
+		#title-bar {
+			background-color: color(opere);
+		}
+		article aside h2, #more-articles > div li h3 {
+			color: color(opere);
+		}
+		#more-articles > div li {
+			border: 1px solid color(opere);
+		}
+	}
+	&.orientamento, &.orientation, &.orientation {
+		#title-bar {
+			background-color: color(orientamento);
+		}
+		article aside h2, #more-articles > div li h3 {
+			color: color(orientamento);
+		}
+		#more-articles > div li {
+			border: 1px solid color(orientamento);
+		}
+	}
+
+	//--- end ---//
+
+	#title-bar header {
+		h1 {
+			margin-bottom: 2rem;
+		}
+
+		h2 {
+			@extend %p-title-size;
+		}
+
+		> div {
+			float: none;
+			width: auto;
+			@include outer-container();
+
+			> div {
+				margin-top: 0;
+				@include span-columns(4);
+				img {
+					max-width: 100%;
+				}
+			}
+
+			p {
+				@include span-columns(8);
+			}
+		}
+	}
+
+	article {
+		@include outer-container();
+		@include pads(5 2 7 2);
+
+		aside {
+
+			> div {
+				@include span-columns(4);
+
+				h2 {
+					@extend %p-title-size;
+					margin-bottom: 1rem;
+				}
+
+				li {
+					line-height: 160%;
+					a {
+						text-decoration: none;
+						color: color(black);
+					}
+				}
+			}
+		}
+
+		#single-article-container {
+			@include span-columns(8);
+
+			> h2 {
+				@extend %p-title-size;
+				@extend %bold-weight;
+				margin-bottom: 2rem;
+				margin-top: 5rem;
+
+				
+			}
+
+			> h2:first-child {
+				margin-top: 0;
+			}
+		}
+
+	}
+
+	#more-articles {
+		background-color: color(brand-kit-lighter);
+		
+		> div {
+			@include outer-container();
+			@include pads(3 2 7 2);
+
+			h2 {
+				@extend %p-title-size;
+				margin-bottom: 5rem;
+			}
+
+			a {
+				@include span-columns(4);
+				text-decoration: none;
+				
+				li {
+					padding: 1rem;
+
+					img {
+						display: block;
+						margin: auto;
+						max-width: 100%;
+					}
+
+					h3 {
+						@extend %bold-weight;
+					}
+
+					p {
+						color: color(black);
+					}
+				}
+			}
+		}
+	}
+
+
+}

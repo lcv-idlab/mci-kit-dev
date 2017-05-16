@@ -1,0 +1,149 @@
+//--- KIT MAIN --//
+
+#kit {
+
+	#categories-nav {
+		@extend %nav-size;
+		border-bottom: 1px solid color(black);
+
+		ul {
+			@include outer-container();
+			height: 3rem;
+
+			li {
+				display: inline;
+				@include span-columns(4);
+				text-align: center;
+				//border-right: 1px solid color(black);
+			}
+
+			a {
+				@extend %bold-weight;
+				line-height: 3rem;
+				text-decoration: none;
+			}
+		}
+
+		.comunicazione {
+			@extend %comunicazione;
+		}
+		.opere {
+			@extend %opere;
+		}
+		.orientamento {
+			@extend %orientamento;
+		}
+	}
+
+	#categories-container {
+		@include outer-container();
+		@include pads(0 2 0 2);
+		margin-bottom: 7rem;
+
+		section {
+			@include span-columns(12);
+			@include pads(3 0 5 0);
+			border-bottom: 1px solid color(black);
+			
+			&:last-child {
+				border-bottom: none;
+				padding-bottom: 0;
+			}
+
+			> header {
+				@include span-columns(6 of 12);
+				@include pads(1 1 1 1);
+				margin-top: 2rem;
+				
+				h2 {
+					@extend %kit-title-size;
+					margin-bottom: 1rem;
+				}
+			}
+
+			//--- Categories colors specifications ---//
+
+			&#comunicazione, &#communication, &#comunication, &#kommunikation {
+				header h2, article div div header h3 {
+					@extend %comunicazione;
+				}
+				> header {
+					border-left: 1rem solid color(comunicazione);
+				}
+				article .article-content-container {
+					border: 1px solid color(comunicazione);
+				}
+			}
+			&#opere, &%artpieces {
+				header h2, article div div header h3 {
+					@extend %opere;
+				}
+				> header {
+					border-left: 1rem solid color(opere);
+				}
+				article .article-content-container {
+					border: 1px solid color(opere);
+				}
+			}
+			&#orientamento, &%orientation, &%orientation {
+				header h2, article div div header h3 {
+					@extend %orientamento;
+				}
+				> header {
+					border-left: 1rem solid color(orientamento);
+				}
+				article .article-content-container {
+					border: 1px solid color(orientamento);
+				}
+			}
+
+			//--- end ---//
+
+			a {
+				@include span-columns(6 of 12);
+
+				article {
+					margin-top: 2rem;
+
+					.article-content-container {
+						@include outer-container();
+
+						aside {
+							@include span-columns(6);
+
+							img {
+								max-width: 100%;
+								padding: 1rem;
+							}
+						}
+
+						> div {
+							@include span-columns(6);
+							margin-right: 0;
+							margin-top: 1rem;
+							margin-bottom: 1rem;
+							padding-right: 1rem;
+
+							header {
+								@include span-columns(6 of 6);
+								h3 {
+									@extend %medium-weight;
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			a:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		a:link, a:visited, a:hover, a:active {
+			text-decoration: none;
+			color: color(black);
+		}
+	}
+}

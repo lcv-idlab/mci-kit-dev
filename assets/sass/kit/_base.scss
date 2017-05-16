@@ -1,0 +1,134 @@
+//--- KIT BASE ---//
+#kit {
+
+	// font baseline
+	@include media($x-small) {
+		font-size: 14px;
+	}
+	@include media($small) {
+		font-size: 14px;
+	}
+	@include media($medium) {
+		font-size: 14px;
+	}
+	@include media($large) {
+		font-size: 16px;
+	}
+	@include media($desktop) {
+		font-size: 16px;
+	}
+}
+
+//--- KIT FONT SIZE ---//
+
+%nav-size {
+	font-size: 18px;
+}
+
+%p-title-size {
+
+	@include media($x-small) {
+		font-size: 1.286rem;
+	}
+	@include media($small) {
+		font-size: 1.286rem;
+	}
+	@include media($medium) {
+		font-size: 1.714rem;
+	}
+	@include media($large) {
+		font-size: 1.5rem;
+	}
+	@include media($desktop) {
+		font-size: 1.5rem;
+	}
+}
+
+%kit-title-size {
+
+	@include media($x-small) {
+		font-size: 1.286rem;
+	}
+	@include media($small) {
+		font-size: 1.286rem;
+	}
+	@include media($medium) {
+		font-size: 1.714rem;
+	}
+	@include media($large) {
+		font-size: 2rem;
+	}
+	@include media($desktop) {
+		font-size: 2rem;
+	}
+
+	@extend %medium-weight;
+}
+
+%title-size {
+
+	@include media($x-small) {
+		font-size: 2.286rem;
+	}
+	@include media($small) {
+		font-size: 2.286rem;
+	}
+	@include media($medium) {
+		font-size: 2.286rem;
+	}
+	@include media($large) {
+		font-size: 3rem;
+	}
+	@include media($desktop) {
+		font-size: 3rem;
+	}
+}
+
+
+//--- KIT BORDER SPECS ---//
+%border-heavy {
+	border-top: 4px solid color(brand-kit);
+}
+
+%border-light {
+	border-top: 0.05rem solid color(brand-kit);
+}
+
+
+//--- COTEGORIES TEXT COLOR --//
+%comunicazione {
+	color: color(comunicazione);
+}
+%opere {
+	color: color(opere);
+}
+%orientamento {
+	color: color(orientamento);
+}
+
+//--- SHARED PARTS ---//
+
+#title-bar {
+	background-color: color(brand-kit-header);
+	color: color(white);
+
+	header {
+		@include outer-container();
+		@include pads(5 2 5 2);
+
+		h1 {
+			@include span-columns(12);
+			@extend %title-size;
+			@extend %bold-weight;
+		}
+
+		div {
+			@include span-columns(8);
+			margin-top: 5rem;
+		}
+	}
+}
+
+#kit .button {
+	background-color: color(brand-kit);
+}

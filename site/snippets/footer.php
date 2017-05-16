@@ -1,19 +1,18 @@
 <!-- FOOTER -->
 
-<footer>
-  <div class="contacts">
-    <div>
-      <p>Mediazione Cultura Inclusione</p>
-      <p>SUPSI Laboratorio cultura visiva</p>
-    </div>
-      <a href="mailto:info.mci@supsi.ch">info.mci@supsi.ch</a>
-  </div>
+<footer class="kit-footer">
+	<div class="contacts">
+		<div id="address"><?php echo $site->address()->kt() ?></div>
+		<div id="contact"><?php echo $site->contact()->kt() ?></div>
+		<div id="license"><?php echo $site->license()->kt() ?></div>
+	</div>
 </footer>
 
-<!--- end FOOTER -->
+<!-- end: FOOTER -->
 
-<!--- Google Analytics -->
+<!-- Google Analytics -->
 
+<!--
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,8 +21,9 @@
 
   ga('create', 'UA-85628221-2', 'auto');
   ga('send', 'pageview');
-
+  
 </script>
+-->
 
 </body>
 </html>

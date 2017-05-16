@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header-ricerca') ?>
 
 <main>
 	<h1 class="title title-project"><?php echo page()->title()->html() ?></h1>
@@ -17,4 +17,4 @@
 	</ul>
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>

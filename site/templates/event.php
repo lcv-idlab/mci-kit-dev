@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header-ricerca') ?>
 
 <main>  
   <a href="<?php echo page('eventi')->url() ?>" class="link link-back"><span>Torna agli eventi</span></a>
@@ -44,4 +44,4 @@
 
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>
