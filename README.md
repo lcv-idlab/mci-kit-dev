@@ -3,12 +3,13 @@ Kirby-mame:
 setup:
 
 ``$ npm install gulp``
-`$ npm install gulp-sass``
+
+``$ npm install gulp-sass``
 
 
 run:
 
-$ gulp & php -S localhost:3000
+``$ gulp & php -S localhost:3000``
 
 access to the panel:
 
