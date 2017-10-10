@@ -2,9 +2,9 @@
 
 <footer class="kit-footer">
 	<div class="contacts">
-		<div id="address"><?php echo $site->address()->kt() ?></div>
-		<div id="contact"><?php echo $site->contact()->kt() ?></div>
-		<div id="license"><?php echo $site->license()->kt() ?></div>
+		<div><?php echo $site->address()->kt() ?></div>
+    <div><?php echo $site->coordination()->kt() ?></div>
+		<div><?php echo $site->contact()->kt() ?><?php echo $site->license()->kt() ?></div>
 	</div>
 </footer>
 

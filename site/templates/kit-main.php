@@ -26,7 +26,7 @@
 
 	<div id="categories-container">
 
-	<?php foreach (page()->children() as $cat): ?>
+	<?php foreach ($page->children() as $cat): ?>
 
 		<section id="<?php echo $cat->title() ?>">
 
@@ -34,11 +34,16 @@
 			<header>
 				<h2><?php echo ucfirst($cat->title()) ?></h2>
 				<?php echo $cat->description()->kt() ?>
+				<div class="cat-button-open">
+					<span class="cat-button-open-span"></span>
+					<span class="cat-button-open-span"></span>
+				</div>
 			</header>
 			<!-- end: CATEGORY TITLE -->
 
 			<!-- SINGLE KITS -->
-			<?php foreach ($cat->children() as $kit): ?>
+			<div class="single-kits-container" id="<?php echo "cont_".$cat->title() ?>">
+			<?php foreach ($cat->children()->visible() as $kit): ?>
 			<a href="<?php echo $kit->url() ?>">		
 				<article>
 					<div class="article-content-container">
@@ -55,6 +60,7 @@
 				</article>
 			</a>
 			<?php endforeach ?>
+			</div>
 			<!-- end: SINGLE KITS -->
 			
 		</section>

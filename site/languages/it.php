@@ -20,7 +20,6 @@
 	l::set('more', 'continua a leggere');
 
 	// footer
-	l::set('contacts', 'contatti');
 
 	// header
 	l::set('mci', 'mediazione cultura incusione');

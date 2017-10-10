@@ -17,7 +17,6 @@
 	#toolkit {
 		@include span-columns(6);
 		@include omega(2n);
-
 	}
 
 	#resources {
@@ -37,6 +36,22 @@
 		}
 		
 
+	}
+
+	@media screen and (max-width: 720px) {
+		#toolkit {
+			@include span-columns(12);
+		}
+		#resources {
+			@include span-columns(12);
+			margin-top: 3rem;
+		}
+	}
+
+	@media screen and (max-width: 420px) {
+		#resources a {
+			@include span-columns(12 of 12);
+		}
 	}
 
 	#project {

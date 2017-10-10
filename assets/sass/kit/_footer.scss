@@ -16,6 +16,46 @@
 			}
 			div {
 				@include span-columns(4);
+
+				p:first-child::after {
+					content: none;
+				}
+
+				p + p {
+					margin-top: 1rem;
+				}
+
+				p {
+					display: block;
+					a {
+						float: none;
+						color: color(white);
+					}
+				}
+			}
+
+			@media screen and (max-width: 730px) {
+				div {
+					@include span-columns(6);
+					@include omega(2n);
+				}
+				div:nth-child(2) {
+					margin-top: 0;
+				}
+				div:last-child {
+					float: right;
+				}
+			}
+			@media screen and (max-width: 530px) {
+				div {
+					@include span-columns(12);
+				}
+				div + div {
+					margin-top: 2rem;
+				}
+				div:nth-child(2) {
+					margin-top: 2rem;
+				}
 			}
 		}
 	}

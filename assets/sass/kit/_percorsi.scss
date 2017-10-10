@@ -10,7 +10,24 @@
 			margin-top: 5rem;
 
 			.percorsi-media-container {
-				@include span-columns(6 of 12);
+				@include media($desktop) {
+					@include span-columns(6 of 12);
+				}
+				@include media($large) {
+					@include span-columns(6 of 12);
+				}
+				@include media($medium) {
+					@include span-columns(8 of 8);
+					margin-bottom: 3rem;
+				}
+				@include media($small) {
+					@include span-columns(4 of 4);
+					margin-bottom: 3rem;
+				}
+				@include media($x-small) {
+					@include span-columns(4 of 4);
+					margin-bottom: 2rem;
+				}
 
 				.video {
 					position: relative;
@@ -37,7 +54,24 @@
 			}
 
 			.percorsi-content-container {
-				@include span-columns(6 of 12);
+				@include media($desktop) {
+					@include span-columns(6 of 12);
+				}
+				@include media($large) {
+					@include span-columns(6 of 12);
+				}
+				@include media($medium) {
+					@include span-columns(8 of 8);
+					margin-bottom: 3rem;
+				}
+				@include media($small) {
+					@include span-columns(4 of 4);
+					margin-bottom: 3rem;
+				}
+				@include media($x-small) {
+					@include span-columns(4 of 4);
+					margin-bottom: 2rem;
+				}
 
 				header h2 {
 					@extend %p-title-size;

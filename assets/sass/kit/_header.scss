@@ -1,8 +1,182 @@
 //--- KIT HEADER ---//
 
+%kit-main-nav-buttons {
+	@extend %medium-size;
+	color: color(white);
+	text-decoration: none;
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.2857142857rem;
+	}
+}
+
 #kit {
 	.main-nav {
 		background-color: color(brand-kit);
-	}
 
+		nav {
+			@include outer-container();
+
+			.main-logo {
+				@extend %kit-main-nav-buttons;
+				@extend %bold-weight;
+				@include pads(2 2 2 2);
+				display: inline-block;
+
+				&::after {
+					content: "Mediazione Cultura Inclusione";
+				}
+
+				@media screen and (max-width: 540px) {
+					&::after {
+					content: "MCI";
+					}
+				}
+			}
+
+
+			// hamburger menu button animation
+			#menu-button {
+				width: 60px;
+				height: 45px;	// 1.333333 rapport
+				position: absolute;
+				margin-left: auto;
+				margin-right: 0;
+				top: 0.4rem;
+				right: 1rem;
+				@include transform(rotare(0deg));
+				@include transition(.5s ease-in-out);
+				cursor: pointer;
+				@include transform(scale(0.5));
+
+				span {
+					display: block;
+					position: absolute;
+					height: 6px;
+					width: 100%;
+					background: color(white);
+					border-radius: 0px;
+					opacity: 1;
+					left: 0;
+					@include transform(rotate(0deg));
+					@include transition(.25s ease-in-out);
+				}
+
+				& span:nth-child(1) {
+				  top: 0px;
+				  @include transform-origin(left center);
+				}
+
+				& span:nth-child(2) {
+				  top: 18px;
+				  @include transform-origin(left center);
+				}
+
+				& span:nth-child(3) {
+				  top: 36px;
+				  @include transform-origin(left center);
+				}
+
+				&.open span:nth-child(1) {
+				  @include transform(rotate(45deg));
+				  top: -3px;
+				  left: 8px;
+				}
+
+				&.open span:nth-child(2) {
+				  width: 0%;
+				  opacity: 0;
+				}
+
+				&.open span:nth-child(3) {
+				  @include transform(rotate(-45deg));
+				  top: 39px;
+				  left: 8px;
+				}
+
+				@media screen and (min-width: 600px) {
+					display: none;
+				}
+			}
+
+
+			/*
+			.menu-button {
+				display: none;
+
+				a {
+					@extend %kit-menu-button;
+					@include pads(1.286 2 1.286 2);
+					position: absolute;
+					right: 0;
+					top: 0;
+					border-left: 1px solid color(white);
+					width: 8rem;
+					text-align: center;
+
+					&::before {
+						content: "menu";
+					}
+
+					&.open::before {
+						content: "chiudi";
+					}
+				}
+			}
+			*/
+
+			> ul {
+				display: inline-block;
+
+				> li {
+					display: inline;
+
+					> a {
+						@extend %kit-main-nav-buttons;
+						@extend %light-weight;
+						color: color(white);
+						text-decoration: none;
+						@include pads(2 1.5625 2 1.5625);
+						display: inline-block;
+					}
+				}
+			}
+
+			@media screen and (max-width: 600px) {		
+				.main-logo {
+					@include pads(1 2 1 2);
+				}
+				/*
+				.menu-button {
+					display: block;
+				}
+				*/
+
+				> ul {
+					display: block;
+					width: 100%;
+					height: 0;
+					overflow: hidden;
+					background-color: color(white);
+					@include transition( height .4s);
+
+					&.open {
+						height: 8rem;
+					}
+
+					> li {
+						display: list-item;
+						border-bottom: 1px solid color(brand-kit);
+						height: 4rem;
+
+						> a {
+							color: color(black);
+							width: 100%;
+							@include pads(1 0 1 2);
+						}
+					}
+				}
+			}
+		}
+	}
 }

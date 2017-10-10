@@ -33,6 +33,10 @@
 		.orientamento {
 			@extend %orientamento;
 		}
+
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
 	}
 
 	#categories-container {
@@ -40,11 +44,18 @@
 		@include pads(0 2 0 2);
 		margin-bottom: 7rem;
 
+		@media screen and (max-width: 600px) {
+			padding: 0;
+			margin-bottom: 0;
+		}
+
 		section {
 			@include span-columns(12);
 			@include pads(3 0 5 0);
 			border-bottom: 1px solid color(black);
 			
+
+
 			&:last-child {
 				border-bottom: none;
 				padding-bottom: 0;
@@ -59,7 +70,72 @@
 					@extend %kit-title-size;
 					margin-bottom: 1rem;
 				}
+
+				.cat-button-open {
+					display: none;
+				}
+
+				@media screen and (max-width: 600px) {
+					@include span-columns(12 of 12);
+					margin-top: 0;
+					padding-bottom: 0;
+
+					.cat-button-open {
+						position: relative;
+						display: block;
+						width: 3rem;
+						height: 3rem;
+						border-radius: 1.5rem;
+						margin-top: 2rem;
+						margin-left: auto;
+						margin-right: 0px;
+						cursor: pointer;
+						@include transition(.25s ease-in-out);
+
+						span {
+							display: block;
+							position: absolute;
+							top: 1.9rem;
+							left: 0.2rem;
+							height: 0.2rem;
+							width: 1.3rem;
+							border-radius: 0.1rem;
+							background-color: color(white);
+							opacity: 1;
+						}
+
+						& span:first-child() {
+							@include transform-origin(center right);
+							@include transform(rotate(45deg));
+						}
+
+						& span:last-child() {
+							left: 50%;
+							@include transform-origin(center left);
+							@include transform(rotate(-45deg));
+						}
+						/*
+
+						&.open span:first-child() {
+							@include transform-origin(top right);
+							@include transform(rotate(-45deg));
+						}
+
+						&.open span:last-child() {
+							left: 50%;
+							@include transform-origin(top left);
+							@include transform(rotate(45deg));
+						}
+						*/
+
+						&.open {
+							@include transform(rotate(180deg));
+						}
+					}
+				}
 			}
+
+
 
 			//--- Categories colors specifications ---//
 
@@ -69,9 +145,20 @@
 				}
 				> header {
 					border-left: 1rem solid color(comunicazione);
+					.cat-button-open {
+						background-color: color(comunicazione);
+					}
+
+					@media screen and (max-width: 600px) {
+						border-left: none;
+					}
 				}
 				article .article-content-container {
 					border: 1px solid color(comunicazione);
+				}
+
+				@media screen and (max-width: 600px) {
+					border-left: 1rem solid color(comunicazione);
 				}
 			}
 			&#opere, &%artpieces {
@@ -80,9 +167,20 @@
 				}
 				> header {
 					border-left: 1rem solid color(opere);
+					.cat-button-open {
+						background-color: color(opere);
+					}
+
+					@media screen and (max-width: 600px) {
+						border-left: none;
+					}
 				}
 				article .article-content-container {
 					border: 1px solid color(opere);
+				}
+
+				@media screen and (max-width: 600px) {
+					border-left: 1rem solid color(opere);
 				}
 			}
 			&#orientamento, &%orientation, &%orientation {
@@ -91,9 +189,20 @@
 				}
 				> header {
 					border-left: 1rem solid color(orientamento);
+					.cat-button-open {
+						background-color: color(orientamento);
+					}
+
+					@media screen and (max-width: 600px) {
+						border-left: none;
+					}
 				}
 				article .article-content-container {
 					border: 1px solid color(orientamento);
+				}
+
+				@media screen and (max-width: 600px) {
+					border-left: 1rem solid color(orientamento);
 				}
 			}
 
@@ -114,6 +223,14 @@
 							img {
 								max-width: 100%;
 								padding: 1rem;
+								display: block;
+								margin-left: auto;
+								margin-right: auto;
+							}
+
+							@media screen and (max-width: 400px) {
+								width: 100%;
+								@include span-columns(12);
 							}
 						}
 
@@ -123,6 +240,11 @@
 							margin-top: 1rem;
 							margin-bottom: 1rem;
 							padding-right: 1rem;
+
+							@media screen and (max-width: 400px) {
+								@include span-columns(12);
+								padding-left: 1rem;
+							}
 
 							header {
 								@include span-columns(6 of 6);
@@ -136,8 +258,48 @@
 				}
 			}
 
-			a:nth-child(2n) {
+			a:nth-child(odd) {
 				margin-right: 0;
+			}
+
+			@media screen and (max-width: 600px) {
+				@include pads(1 0 3 0);
+
+				&:last-child {
+					border-bottom: none;
+					padding-bottom: 3rem;
+				}
+
+				.single-kits-container {
+
+					@include span-columns(12);
+
+					overflow: hidden;
+					@include transition(height 0.5s ease-in-out);
+					
+					a {
+						@include span-columns(12 of 12);
+						@include pads(0 1 0 1);
+						overflow: auto;
+					}
+
+					a:first-child {
+						article {
+							border-top: 1px solid color(black);
+							padding-top: 2rem;
+						}
+					}
+
+					&.closed {
+						//a {
+							display: block;
+							width: 100%;
+							height: 0px;
+							overflow: hidden;
+							@include transition(height 0.5s ease-in);
+						//}
+					}
+				}
 			}
 		}
 

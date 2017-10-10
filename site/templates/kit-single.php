@@ -51,28 +51,44 @@
 	<!-- end: MAIN ARTICLE -->
 
 	<!-- MORE -->
-
-	<div id="more-articles">
-		<div>
-			<h2><?php echo l::get('more') ?></h2>
+	<?php 		
+		$offset = 1 + $page->siblings(false)->visible()->indexOf($page);
+		$coll = $page->siblings(false)->visible()->offset($offset)->limit(3);
+		if ($coll->count() < 3) {
+			$coll2 = $page->siblings(false)->visible()->limit(3 - $coll->count());
+			$coll = $coll->merge($coll2);
+		}
+	?>
+	<?php if ($coll->count()): ?>
 			
-			<ul>
-				<?php foreach( page()->parent()->children() as $kit): ?>
-					<a href="<?php echo $kit->url() ?>">
-						<li>
-						<?php if ($kit->icon()->isNotEmpty() ): ?>
-							<img src="<?php echo $kit->image($kit->icon())->url() ?>">
-						<?php endif ?>
-						<h3><?php echo $kit->title() ?></h3>
-						<?php echo $kit->description()->kt() ?>
-						</li>
-					</a>
-				<?php endforeach ?>
-			</ul>
+		<div id="more-articles">
+			<div>
+				<h2><?php echo l::get('more') ?></h2>
+				
+				<ul>
+					<?php foreach( $coll as $kit): ?>
+						<a href="<?php echo $kit->url() ?>">
+							<li>
+							<?php if ($kit->icon()->isNotEmpty() ): ?>
+								<img src="<?php echo $kit->image($kit->icon())->url() ?>">
+							<?php endif ?>
+							<div>
+								<h3><?php echo $kit->title() ?></h3>
+								<?php echo $kit->description()->kt() ?>
+							</div>
+							</li>
+						</a>
+					<?php endforeach ?>
+
+					<?php if (count($coll) < 3): ?>
+					
+					<?php endif ?>
+				</ul>
+			</div>
+
 		</div>
 
-	</div>
-
+	<?php endif ?>
 	<!-- end: MORE -->
 
 </main>

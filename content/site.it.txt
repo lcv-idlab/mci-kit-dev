@@ -20,12 +20,14 @@ Cultura Inclusione
 Address: 
 
 **SUPSI**
-Scuola Universitaria Professionale della Svizzera Italiana  
+Scuola Universitaria Professionale
+della Svizzera Italiana  
 
-**LCV**
 Laboratorio Cultura Visiva
 Campus Trevano
+
 CH-6952 Canobbio
++41 (0)58 666 63 00
 
 (link: http://www.supsi.ch text: www.supsi.ch)
 
@@ -33,11 +35,25 @@ CH-6952 Canobbio
 
 Contact: 
 
-**Contatto**
-Valeria Donnarumma
-
+**Contatto progetto:**
 (email: info.mci@supsi.ch text: info.mci@supsi.ch)
 
 ----
 
-License: CC-BY-SA-NC
+License: 
+
+**Licenza:**
+CC-BY-SA-NC
+
+----
+
+Coordination: 
+
+**Coordinamento:**
+Valeria Donnarumma
++41 (0)58 666 63 48
+(email: valeria.donnarumma@supsi.ch text: valeria.donnarumma@supsi.ch)
+
+Jean-Pierre Candeloro
++41 (0)58 666 63 90
+(email: jeanpierre.candeloro@supsi.ch text:  jeanpierre.candeloro@supsi.ch)

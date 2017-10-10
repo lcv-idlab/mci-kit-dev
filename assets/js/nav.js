@@ -1,12 +1,12 @@
 // Script to manage the mobile menu
 
-
-window.onload = function() {
+//old!!! window.onload = function() {
+$(document).ready(function () {
 	var navToggle = document.querySelector(".main-nav .menu-button");
 	var nav = document.querySelector( ".main-nav nav ul");
 	var button = document.querySelector(".main-nav .menu-button a");
 
-	//console.log(navToggle);
+	console.log(navToggle);
 
 	if ( navToggle ) {
 		navToggle.addEventListener( "click", function(e) {
@@ -54,4 +54,4 @@ window.onload = function() {
 		});
 	}
 
-};
+});

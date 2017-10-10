@@ -11,7 +11,7 @@
 		article aside h2, #more-articles > div li h3 {
 			color: color(comunicazione);
 		}
-		#more-articles > div li {
+		#more-articles > div a {
 			border: 1px solid color(comunicazione);
 		}
 
@@ -23,7 +23,7 @@
 		article aside h2, #more-articles > div li h3 {
 			color: color(opere);
 		}
-		#more-articles > div li {
+		#more-articles > div a {
 			border: 1px solid color(opere);
 		}
 	}
@@ -34,7 +34,7 @@
 		article aside h2, #more-articles > div li h3 {
 			color: color(orientamento);
 		}
-		#more-articles > div li {
+		#more-articles > div a {
 			border: 1px solid color(orientamento);
 		}
 	}
@@ -58,13 +58,41 @@
 			> div {
 				margin-top: 0;
 				@include span-columns(4);
+				margin-right: 0;
 				img {
 					max-width: 100%;
+					display: block;
+					margin-right: auto;
+					margin-left: auto;
+					padding-right: 1rem;
+					padding-left: 1rem;
 				}
 			}
 
 			p {
-				@include span-columns(8);
+				@include span-columns(6);
+			}
+
+			@media screen and (max-width: 720px) {
+				> div {
+					@include span-columns(12);
+					img {
+						transform: translate(45%);
+					}
+				}
+
+				p {
+					@include span-columns(12);
+					margin-top: 3rem;
+				}
+			}
+
+			@media screen and (max-width: 420px) {
+				> div {
+					img {
+						transform: translate(0);
+					}
+				}
 			}
 		}
 	}
@@ -110,6 +138,24 @@
 			}
 		}
 
+		@media screen and (max-width: 720px) {
+			aside {
+				display: none;
+			}
+
+			#single-article-container {
+				@include span-columns(12);
+
+				> h2 {
+					margin-top: 3rem;
+				}
+
+				> h2:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
 	}
 
 	#more-articles {
@@ -127,27 +173,57 @@
 			a {
 				@include span-columns(4);
 				text-decoration: none;
+				padding: 1rem;
 				
-				li {
-					padding: 1rem;
-
+				li {		
 					img {
 						display: block;
 						margin: auto;
 						max-width: 100%;
 					}
 
-					h3 {
-						@extend %bold-weight;
-					}
+					div {
+						h3 {
+							@extend %bold-weight;
+						}
 
-					p {
-						color: color(black);
+						p {
+							color: color(black);
+						}
 					}
+				}
+			}
+
+			@media screen and (max-width: 720px) and (min-width: 420px) {
+				a {
+					@include span-columns(12);
+
+					li {
+						img {
+							@include span-columns(4 of 12);
+							max-width: 10rem;
+						}
+						div {
+							@include span-columns(8 of 12);
+						}
+
+					}
+				}
+
+				a + a {
+					margin-top: 2rem;
+				}
+			}
+
+			@media screen and (max-width: 420px) {
+				a {
+					@include span-columns(12);
+				}
+
+				a + a {
+					margin-top: 2rem;
 				}
 			}
 		}
 	}
-
-
 }

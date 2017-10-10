@@ -29,6 +29,9 @@ fields:
   address:
     label: Indirizzo
     type: textarea
+  coordination:
+    label: Coordinamento
+    type: textarea
   contact:
     label: Contatto
     type: textarea
