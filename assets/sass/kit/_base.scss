@@ -87,7 +87,7 @@
 	}
 }
 
-%kit-title-size {
+%kit-main-categories-title {
 
 	@include media($x-small) {
 		font-size: 2rem;
@@ -108,7 +108,7 @@
 	@extend %medium-weight;
 }
 
-%title-size {
+%h1-title-size {
 
 	@include media($x-small) {
 		font-size: 2.286rem;
@@ -125,8 +125,32 @@
 	@include media($desktop) {
 		font-size: 3rem;
 	}
+
+	line-height: 3rem;
 }
 
+
+%h2-title-size {
+
+	@include media($x-small) {
+		font-size: 1.5rem;
+	}
+	@include media($small) {
+		font-size: 1.5rem;
+	}
+	@include media($medium) {
+		font-size: 1.5rem;
+	}
+	@include media($large) {
+		font-size: 1.7rem;
+	}
+	@include media($desktop) {
+		font-size: 1.7rem;
+	}
+
+	@extend %medium-weight;
+
+}
 
 //--- KIT BORDER SPECS ---//
 %border-heavy {
@@ -163,11 +187,11 @@
 		@include pads(5 2 5 2);
 
 		h1 {
-			@include span-columns(12);
-			@extend %title-size;
+			@extend %h1-title-size;
 			@extend %bold-weight;
 		}
 
+		/*
 		> div {
 			@include media($x-small) {
 				@include span-columns(4);
@@ -186,8 +210,9 @@
 			}
 			
 
-			margin-top: 5rem;
+			//margin-top: 5rem;
 		}
+		*/
 	}
 }
 

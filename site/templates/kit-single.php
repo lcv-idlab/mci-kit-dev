@@ -3,8 +3,34 @@
 <main id="kit-single" class="<?php echo page()->parent()->title() ?>">
 	<div id="title-bar">
 		<header>
-			<h1 ><?php echo page()->title()->html() ?></h1>
-			<h2><?php echo page()->parent()->title() ?></h2>
+			<div id="back-icon">
+				<a href="/kit">
+					
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="154.024px" height="100px" viewBox="-161.111 0 154.024 100" enable-background="new -161.111 0 154.024 100"
+					xml:space="preserve">
+						<line fill="none" stroke="#555555" stroke-width="13.3791" stroke-linecap="round" stroke-linejoin="round" x1="-18.367" y1="50.002" x2="-138.267" y2="50.002"/>
+						<polyline fill="none" stroke="#555555" stroke-width="13.3791" stroke-linecap="round" stroke-linejoin="round" points="-98.09,91.874 -149.83,50.002 -98.096,8.126 "/>
+					</svg>
+
+				</a>
+			</div>
+
+			<div id="center-titles">
+				<h2><?php echo page()->parent()->title() ?></h2>
+				<h1 ><?php echo page()->title()->html() ?></h1>
+				
+			</div>
+
+			<div id="kit-icon">
+				<?php if (page()->icon()->isNotEmpty() ): ?>
+					<img src="<?php echo page()->image(page()->icon())->url() ?>">
+				<?php else: ?>
+					<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
+				<?php endif ?>
+			</div>
+
+			<!--
 			<div>
 				<div>
 				<?php if (page()->icon()->isNotEmpty() ): ?>
@@ -15,6 +41,7 @@
 				</div>
 				<?php echo page()->description()->kt() ?>
 			</div>
+			-->
 		</header>
 	</div>
 
@@ -71,15 +98,18 @@
 					<?php foreach( $coll as $kit): ?>
 						<a href="<?php echo $kit->url() ?>">
 							<li>
-							<?php if ($kit->icon()->isNotEmpty() ): ?>
-								<img src="<?php echo $kit->image($kit->icon())->url() ?>">
-							<?php else: ?>
-								<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
-							<?php endif ?>
-							<div>
-								<h3><?php echo $kit->title() ?></h3>
-								<?php echo $kit->description()->kt() ?>
-							</div>
+								<div class="box-image">
+								<?php if ($kit->icon()->isNotEmpty() ): ?>
+									<img src="<?php echo $kit->image($kit->icon())->url() ?>">
+								<?php else: ?>
+									<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
+								<?php endif ?>
+								</div>
+
+								<div class="box-text">
+									<h3><?php echo $kit->title() ?></h3>
+									<?php echo $kit->description()->kt() ?>
+								</div>
 							</li>
 						</a>
 					<?php endforeach ?>
