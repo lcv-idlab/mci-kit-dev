@@ -26,6 +26,24 @@
 	font-size: 18px;
 }
 
+%article-h3 {
+		@include media($x-small) {
+		font-size: 1.1rem;
+	}
+	@include media($small) {
+		font-size: 1.1rem;
+	}
+	@include media($medium) {
+		font-size: 1.1rem;
+	}
+	@include media($large) {
+		font-size: 1.1rem;
+	}
+	@include media($desktop) {
+		font-size: 1.1rem;
+	}
+}
+
 %p-title-size {
 
 	@include media($x-small) {
@@ -97,6 +115,9 @@
 
 
 //--- COTEGORIES TEXT COLOR --//
+%visita {
+	color: color(visita);
+}
 %comunicazione {
 	color: color(comunicazione);
 }

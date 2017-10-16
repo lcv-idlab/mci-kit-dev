@@ -9,6 +9,8 @@
 				<div>
 				<?php if (page()->icon()->isNotEmpty() ): ?>
 					<img src="<?php echo page()->image(page()->icon())->url() ?>">
+				<?php else: ?>
+					<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
 				<?php endif ?>
 				</div>
 				<?php echo page()->description()->kt() ?>
@@ -71,6 +73,8 @@
 							<li>
 							<?php if ($kit->icon()->isNotEmpty() ): ?>
 								<img src="<?php echo $kit->image($kit->icon())->url() ?>">
+							<?php else: ?>
+								<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
 							<?php endif ?>
 							<div>
 								<h3><?php echo $kit->title() ?></h3>

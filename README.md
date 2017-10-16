@@ -29,3 +29,11 @@ assets/avatars/=777
 content/=777
 site/accounts/.logins=666
 ``
+
+
+## Extra plugins for kirby
+
+- Content Viewer (to show a MD contnet in the Kirby Panel)
+	https://github.com/CalebGrove/content-viewer
+
+- (Kirby panel MD easy styler)

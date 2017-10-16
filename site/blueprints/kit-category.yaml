@@ -7,7 +7,7 @@ options:
   preview: true
   status: true
   url: false
-  template: false
+  template: true
 
 // subpages settings
 pages: true

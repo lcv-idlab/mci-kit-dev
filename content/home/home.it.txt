@@ -15,7 +15,8 @@ Resources:
 
 - 
   name: Sito web ricerca
-  url: http://mci.supsi.ch/ricerca/
+  url: /ricerca/home-ricerca/
+  doc: ""
 - 
   name: Partner
   url: ""

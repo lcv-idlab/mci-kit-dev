@@ -3,7 +3,17 @@
 #kit #kit-single {
 
 	//--- Categories colors specifications ---//
-
+	&.visita, &.visit, &.visite {
+		#title-bar {
+			background-color: color(visita);
+		}
+		article aside h2, #more-articles > div li h3 {
+			color: color(visita);
+		}
+		#more-articles > div a {
+			border: 1px solid color(visita);
+		}
+	}
 	&.comunicazione, &.communication, &.comunication, &.kommunikation {
 		#title-bar {
 			background-color: color(comunicazione);
@@ -14,7 +24,6 @@
 		#more-articles > div a {
 			border: 1px solid color(comunicazione);
 		}
-
 	}
 	&.opere, &.artpieces {
 		#title-bar {
@@ -129,12 +138,25 @@
 				@extend %bold-weight;
 				margin-bottom: 2rem;
 				margin-top: 5rem;
-
-				
 			}
 
 			> h2:first-child {
 				margin-top: 0;
+			}
+
+			> h3 {
+				@extend %article-h3;
+				@extend %bold-weight;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			p + h3 {
+				margin-top: 3rem;
+			}
+
+			p + p {
+				margin-top: 1rem;
 			}
 		}
 

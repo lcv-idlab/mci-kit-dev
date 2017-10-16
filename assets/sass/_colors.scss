@@ -5,17 +5,22 @@
 $colors: (
 	white: #FFFFFF,
 	black: #212121,
-	brand: #C20F2F,
+	brand: rgba(194, 15, 47, 1),
 	brand-lighter: #F7F5F5,
-	brand-kit: rgba(75, 75, 75, 1),
-	brand-kit-lighter: rgba(75, 75, 75, 0.1),
-	brand-kit-header: rgba(75, 75, 75, 0.7),
+	brand-kit: rgba(194, 15, 47, 1),
+	brand-kit-lighter: rgba(194, 15, 47, 0.1),
+	brand-kit-header: rgba(194, 15, 47, 0.9),
 	gray: #aaaaaa,
 	accent-dark: #AE112D,
 	accent-darker: #9F152E,
+	visita: rgba(20, 150, 85, 1),
+	visita-light: rgba(20, 150, 85, 0.2),
 	comunicazione: rgba(180, 29, 108, 1),
+	comunicazione-light: rgba(180, 29, 108, 0.2),
 	orientamento: rgba(254, 181, 0, 1),
-	opere: rgba(1, 98, 203, 1)
+	orientamento-light: rgba(254, 181, 0, 0.2),
+	opere: rgba(1, 98, 203, 1),
+	opere-light: rgba(1, 98, 203, 0.2)
 	);
 
 // function to get the colors

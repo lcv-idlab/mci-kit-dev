@@ -1,0 +1,13 @@
+Title: Visita guidata
+
+----
+
+Description: Il design specifico per un .... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+
+----
+
+Icon: icone_mci_01.png
+
+----
+
+Article: 

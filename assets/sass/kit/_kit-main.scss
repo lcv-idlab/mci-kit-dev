@@ -12,7 +12,7 @@
 
 			li {
 				display: inline;
-				@include span-columns(4);
+				@include span-columns(3);
 				text-align: center;
 				//border-right: 1px solid color(black);
 			}
@@ -22,6 +22,10 @@
 				line-height: 3rem;
 				text-decoration: none;
 			}
+		}
+
+		.visita {
+			@extend %visita;
 		}
 
 		.comunicazione {
@@ -139,6 +143,28 @@
 
 			//--- Categories colors specifications ---//
 
+			&#visita, &#visit, &#visite {
+				header h2, article div div header h3 {
+					@extend %visita;
+				}
+				> header {
+					border-left: 1rem solid color(visita);
+					.cat-button-open {
+						background-color: color(visita);
+					}
+
+					@media screen and (max-width: 600px) {
+						border-left: none;
+					}
+				}
+				article .article-content-container {
+					border: 1px solid color(visita);
+				}
+
+				@media screen and (max-width: 600px) {
+					border-left: 1rem solid color(visita);
+				}
+			}
 			&#comunicazione, &#communication, &#comunication, &#kommunikation {
 				header h2, article div div header h3 {
 					@extend %comunicazione;

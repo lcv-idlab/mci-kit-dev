@@ -38,7 +38,7 @@ fields:
         type: text
       url:
         label: Link del bottone
-        type: url
+        type: text
       doc:
         label: Documento
         type: select 

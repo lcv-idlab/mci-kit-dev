@@ -48,7 +48,11 @@
 				<article>
 					<div class="article-content-container">
 						<aside>
+							<?php if($kit->icon()->isNotEmpty()): ?>
 							<img src="<?php echo $kit->image($kit->icon())->url() ?>">
+							<?php else: ?>
+								<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
+							<?php endif ?>
 						</aside>
 						<div>
 							<header>

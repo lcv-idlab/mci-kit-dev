@@ -3,10 +3,10 @@ title: kit-single
 
 // page settings
 options:
-  delete: false
+  delete: true
   preview: true
   status: true
-  url: false
+  url: true
   template: true
 
 // subpages settings
@@ -42,4 +42,7 @@ fields:
         type: text
       content:
         label: Contenuto della sezione
-        type: textarea
+        type: markdown
+        header1: h2
+        header2: h3
+
