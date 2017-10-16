@@ -63,22 +63,46 @@
 	}
 }
 
-%kit-title-size {
+%kit-title-box {
 
 	@include media($x-small) {
 		font-size: 1.286rem;
+		line-height: 1.5rem;
 	}
 	@include media($small) {
 		font-size: 1.286rem;
+		line-height: 1.5rem;
 	}
 	@include media($medium) {
-		font-size: 1.714rem;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
 	}
 	@include media($large) {
-		font-size: 2rem;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
 	}
 	@include media($desktop) {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+}
+
+%kit-title-size {
+
+	@include media($x-small) {
 		font-size: 2rem;
+	}
+	@include media($small) {
+		font-size: 2rem;
+	}
+	@include media($medium) {
+		font-size: 2.5rem;
+	}
+	@include media($large) {
+		font-size: 3rem;
+	}
+	@include media($desktop) {
+		font-size: 3rem;
 	}
 
 	@extend %medium-weight;

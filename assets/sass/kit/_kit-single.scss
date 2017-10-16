@@ -5,7 +5,10 @@
 	//--- Categories colors specifications ---//
 	&.visita, &.visit, &.visite {
 		#title-bar {
-			background-color: color(visita);
+			background-color: color(visita-light);
+			h1, h2, div > p {
+				color: color(visita);
+			}
 		}
 		article aside h2, #more-articles > div li h3 {
 			color: color(visita);
@@ -16,7 +19,10 @@
 	}
 	&.comunicazione, &.communication, &.comunication, &.kommunikation {
 		#title-bar {
-			background-color: color(comunicazione);
+			background-color: color(comunicazione-light);
+			h1, h2, div > p  {
+				color: color(comunicazione);
+			}
 		}
 		article aside h2, #more-articles > div li h3 {
 			color: color(comunicazione);
@@ -27,7 +33,10 @@
 	}
 	&.opere, &.artpieces {
 		#title-bar {
-			background-color: color(opere);
+			background-color: color(opere-light);
+			h1, h2, div > p  {
+				color: color(opere);
+			}
 		}
 		article aside h2, #more-articles > div li h3 {
 			color: color(opere);
@@ -38,7 +47,10 @@
 	}
 	&.orientamento, &.orientation, &.orientation {
 		#title-bar {
-			background-color: color(orientamento);
+			background-color: color(orientamento-light);
+			h1, h2, div > p  {
+				color: color(orientamento);
+			}
 		}
 		article aside h2, #more-articles > div li h3 {
 			color: color(orientamento);

@@ -33,7 +33,7 @@
 			<!-- CATEGORY TITLE -->
 			<header>
 				<h2><?php echo ucfirst($cat->title()) ?></h2>
-				<?php echo $cat->description()->kt() ?>
+				<!-- <?php echo $cat->description()->kt() ?> -->
 				<div class="cat-button-open">
 					<span class="cat-button-open-span"></span>
 					<span class="cat-button-open-span"></span>
@@ -47,6 +47,12 @@
 			<a href="<?php echo $kit->url() ?>">		
 				<article>
 					<div class="article-content-container">
+						<div>
+							<header>
+								<h3><?php echo ucfirst($kit->title()) ?></h3>
+							</header>
+							<?php echo $kit->description()->kt() ?>
+						</div>
 						<aside>
 							<?php if($kit->icon()->isNotEmpty()): ?>
 							<img src="<?php echo $kit->image($kit->icon())->url() ?>">
@@ -54,12 +60,6 @@
 								<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
 							<?php endif ?>
 						</aside>
-						<div>
-							<header>
-								<h3><?php echo ucfirst($kit->title()) ?></h3>
-							</header>
-							<?php echo $kit->description()->kt() ?>
-						</div>
 					</div>
 				</article>
 			</a>

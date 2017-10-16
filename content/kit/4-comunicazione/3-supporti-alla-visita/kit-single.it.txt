@@ -2,7 +2,7 @@ Title: Supporti alla visita
 
 ----
 
-Description: Per supporti fisici si ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+Description: Per supporti fisici si ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 
 ----
 

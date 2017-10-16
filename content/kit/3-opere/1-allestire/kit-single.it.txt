@@ -2,7 +2,7 @@ Title: Allestire
 
 ----
 
-Description: la descrizione consiste nel.... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+Description: la descrizione consiste nel.... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
 ----
 

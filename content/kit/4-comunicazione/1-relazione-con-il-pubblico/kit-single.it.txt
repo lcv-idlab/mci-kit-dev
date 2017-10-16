@@ -2,7 +2,7 @@ Title: Relazione con il pubblico
 
 ----
 
-Description: Il design specifico per un .... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+Description: Il design specifico per un .... Lorem ipsum dolor sit amet, consectetur adipiscing eli
 
 ----
 
