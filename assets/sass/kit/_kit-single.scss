@@ -81,6 +81,9 @@
 
 	#title-bar header {
 
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
 
 		#back-icon {
 			@include span-columns(1);
@@ -91,6 +94,8 @@
 
 				max-width: 100%;
 			}
+
+
 
 		}
 
@@ -116,6 +121,27 @@
 
 			img {
 				max-width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 420px) {
+
+			#back-icon {
+				display: none;
+			}
+
+			#center-titles {
+				@include span-columns(12);
+			}
+
+			#kit-icon {
+				@include span-columns(12);
+				text-align: center;
+				margin-top: 2rem;
+
+				img {
+					max-height: 13rem;
+				}
 			}
 		}
 
@@ -272,7 +298,7 @@
 	}
 
 	#more-articles {
-		background-color: color(brand-kit-lighter);
+		background-color: color(gray-light-bg);
 		
 		> div {
 			@include outer-container();
@@ -326,14 +352,23 @@
 					@include span-columns(12);
 
 					li {
+						min-height: 4rem;
+						
 						.box-image {
 							@include span-columns(4 of 12);
 							float: right;
 							margin-right: 0;
-							height: 100%;
 
+							/*
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							height: 100%;
+							right: 0;
+							*/
 
 							img {
+								max-height: 8rem;
 								max-width: 100%;
 							}
 						}
@@ -353,6 +388,15 @@
 			@media screen and (max-width: 420px) {
 				a {
 					@include span-columns(12);
+
+					li .box-image img {
+						max-height: 12rem;
+					}
+
+					li .box-text p {
+						//display: none;
+					}
+
 				}
 
 				a + a {

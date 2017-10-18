@@ -98,17 +98,17 @@
 					<?php foreach( $coll as $kit): ?>
 						<a href="<?php echo $kit->url() ?>">
 							<li>
+								<div class="box-text">
+									<h3><?php echo $kit->title() ?></h3>
+									<?php echo $kit->description()->kt() ?>
+								</div>
+
 								<div class="box-image">
 								<?php if ($kit->icon()->isNotEmpty() ): ?>
 									<img src="<?php echo $kit->image($kit->icon())->url() ?>">
 								<?php else: ?>
 									<img src="<?php echo ($kirby->urls()->assets()) ?>/icons/empty-kit-icon.png">
 								<?php endif ?>
-								</div>
-
-								<div class="box-text">
-									<h3><?php echo $kit->title() ?></h3>
-									<?php echo $kit->description()->kt() ?>
 								</div>
 							</li>
 						</a>
@@ -127,4 +127,4 @@
 
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>

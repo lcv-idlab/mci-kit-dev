@@ -20,8 +20,6 @@
 		</ul>
 	</nav>
 
-	<!-- end: SECOND NAV -->
-
 	<!-- CATEGORIES WITH SINGLE KITS -->
 
 	<div id="categories-container">
@@ -65,15 +63,13 @@
 			</a>
 			<?php endforeach ?>
 			</div>
-			<!-- end: SINGLE KITS -->
 			
 		</section>
 
 	<?php endforeach ?>
 	</div>
 
-	<!-- end: CATEGORIES WITH SINGLE KITS -->
 
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer-ricerca') ?>
